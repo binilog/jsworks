@@ -1,0 +1,43 @@
+//     -나이
+//  8세 미만이면 "미취학아동", 8세~13세 "초등학생"
+// 14세~19세 "중, 고등학생", 20세이상 "일반인"
+//     -입장료
+//     - 미취학아동 : 1,000원
+//     - 초등학생 : 2,000원
+//     - 중고생 : 2,500원
+//     - 일반인 : 3,000원
+
+// ----------------------------------------------------
+
+//입력(저장) -  변수생성
+var age = prompt("나이를 입력하세요","5");  //나이
+var charge = 0;  //입장료(초기화)
+
+// 처리 및 출력
+if(age == null){
+    document.write("입력이 취소되었습니다.")}
+else{
+    if(age >= 0 && age < 8){
+        document.write("미취학아동입니다.<br>");
+        charge = 1000;
+    }
+    else if(age >= 8 && age < 14){
+        document.write("초등학생입니다.<br>")
+        charge = 2000;
+    }
+    else if(age >= 14 && age < 20){
+        document.write("중고등학생입니다.<br>")
+        charge = 2500;
+    }
+    else if(age >= 20 && age < 80){
+        document.write("일반입니다.<br>")
+        charge = 3000;
+    }
+    else document.write("입력범위를 초과하였습니다.<br>")
+    
+    document.write("입장료는 " + charge + "원 입니다.");
+}
+
+
+
+

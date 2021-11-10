@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if문 사용</title>
+</head>
+<body>
+    <h3>if문 사용하기</h3>
+    
+    <script>
+        // 나이가 15세 이상이면 "관람가", 아니면 "관람불가"
+        // 입력(저장)
+        // var age = 16;
+        var age = prompt("나이를 입력하세요");
+        // 처리(계산)
+            if(age <= 19){ //비교문 
+            document.write("미성년자<br>관람불가");}
+            if(age > 19){ //비교문 
+            document.write("성인<br>관람가능");}
+
+
+
+        // 결과(출력)
+        document.write("나이는 " + age + "세입니다.");
+
+
+
+
+
+// 16 > 15
+// true
+// 15 > 16
+// false
+// 15 = 16
+// VM86:1 Uncaught SyntaxError: Invalid left-hand side in assignment
+// 15 == 15
+// true
+// 15 != 15
+// false
+    </script>
+</body>
+</html>

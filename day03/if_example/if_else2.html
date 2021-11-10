@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if ~ else 구문</title>
+    <style>
+        p{color: blue; font-weight: 800;}
+        .p2{color: red; font-weight: 800;}
+    </style>
+</head>
+<body>
+    <h3>합격 유무 판정 프로그램</h3>
+    <script>
+        var score = prompt("점수를 입력하세요");
+        if(score >= 60) 
+            document.write("<p>합격</p>")
+        else 
+            document.write("<p class='p2'>불합격</p>");
+            
+        document.write("당신의" + "점수는" + score + "입니다.")
+    </script>
+</body>
+</html>
