@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 - Array</title>
+    <link rel="stylesheet" href="./array1.css">
+    <styke>
+        
+       
+    </styke>
+</head>
+<body>
+    
+    <div id="container">
+    <h2>배열</h2>
+    
+</div>  
+<hr>
+<p><b>
+    <script>
+        
+        //nums 이름의 배열을 생성
+        var nums = new Array(4);
+
+        nums[0] = 10;
+        nums[1] = 20;
+        nums[2] = 30;
+        nums[3] = 40;
+
+        console.log(nums.length + "개");
+
+        nums[1] = 50;
+
+        for(var i = 0; i < nums.length; i++){
+            document.write(nums[i] + " ");
+        }
+        document.write("<br>");
+
+        document.write(nums[0] + nums[1]);
+        document.write("<br>");
+        document.write(nums[1] + nums[2]);
+        document.write("<br>");
+
+        var sum = 0;
+        var avg;
+
+        for(var i = 0; i < nums.length; i++){
+            sum += nums[i];
+        }
+        avg = sum / nums.length;
+        document.write("평균 : "+ avg);
+
+
+       </script>
+       </b></p>
+</body>
+</html>
