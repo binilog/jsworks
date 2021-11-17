@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unknown</title>
+</head>
+<body>
+    <h2 id="heading">unknown(unknown)</h2>
+    <p>unknown</p>
+
+    <h2>unknown</h2>
+    <ul>
+        <li class="city">unknown</li>
+        <li class="city">unknown</li>
+        <li class="city">unknown</li>
+        <li class="city">unknown</li>
+        <li class="city">unknown</li>
+        <li class="city">unknown</li>
+        <li class="city">unknown</li>
+        
+
+    </ul>
+    <script>
+        document.querySelector("#heading").style.color = "red";
+        var cityList = document.querySelectorAll(".city")
+        cityList[0].style.color = "red";
+        cityList[1].style.color = "orange";
+        cityList[2].style.color = "yellow";
+        cityList[3].style.color = "green";
+        cityList[4].style.color = "blue";
+        cityList[5].style.color = "darkblue";
+        cityList[6].style.color = "purple";
+
+        document.write("unknown의 개수 : " +cityList.length + "개");
+        for(var i=0; i < cityList.length; i++){
+            cityList[i].style.backgroundcolor = "#ccc";
+        }
+        
+        // document.querySelector("#heading").style.color = "red";
+
+
+    </script>
+
+    
+</body>
+</html>
